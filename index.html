@@ -1,11 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>keio-homedoor-simulator</title>
+
+    <title>ホームドアシミュレータ</title>
+
+    <!-- PWA設定 -->
+    <!-- manifest（相対パスで安定） -->
+    <link rel="manifest" href="./manifest.json">
+
+    <!-- テーマカラー -->
+    <meta name="theme-color" content="#222222">
+
+    <!-- iPhoneホーム画面アイコン（相対パス推奨） -->
+    <link rel="apple-touch-icon" href="./images/icon-192.png">
+
+    <!-- iOSフルスクリーン起動 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
   </head>
+
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
