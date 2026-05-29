@@ -10,14 +10,16 @@
     <title>ホームドアシミュレータ</title>
 
     <!-- PWA設定 -->
-    <link rel="manifest" href="/homedoor-simulator/manifest.json">
+    <!-- manifest（相対パスで安定） -->
+    <link rel="manifest" href="./manifest.json">
 
+    <!-- テーマカラー -->
     <meta name="theme-color" content="#222222">
 
-    <!-- iPhone用（ホーム画面アイコン） -->
-    <link rel="apple-touch-icon" href="/homedoor-simulator/images/icon-192.png">
+    <!-- iPhoneホーム画面アイコン（相対パス推奨） -->
+    <link rel="apple-touch-icon" href="./images/icon-192.png">
 
-    <!-- iOSでフルスクリーン起動 -->
+    <!-- iOSフルスクリーン起動 -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <script type="module" crossorigin src="/homedoor-simulator/assets/index-CufVvLBi.js"></script>
