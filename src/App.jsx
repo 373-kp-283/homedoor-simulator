@@ -9,12 +9,12 @@ function App() {
 
   // 音声
   const openSound = useMemo(
-    () => new Audio("./sounds/open.wav"),
+    () => new Audio("/sounds/open.wav"),
     []
   );
 
   const closeSound = useMemo(
-    () => new Audio("./sounds/close.wav"),
+    () => new Audio("/sounds/close.wav"),
     []
   );
 
@@ -98,8 +98,8 @@ function App() {
           <img
             src={
               isOpen
-                ? "./images/train-open.png"
-                : "./images/train-close.png"
+                ? "/images/train-open.png"
+                : "/images/train-close.png"
             }
             alt="電車"
             style={{
@@ -115,8 +115,8 @@ function App() {
           <img
             src={
               isOpen
-                ? "./images/homedoor-open.png"
-                : "./images/homedoor-close.png"
+                ? "/images/homedoor-open.png"
+                : "/images/homedoor-close.png"
             }
             alt="ホームドア"
             style={{
@@ -151,8 +151,8 @@ function App() {
           <img
             src={
               consoleOpen
-                ? "./images/console-open.png"
-                : "./images/console-close.png"
+                ? "/images/console-open.png"
+                : "/images/console-close.png"
             }
             alt="操作盤"
             style={{
