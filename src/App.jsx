@@ -1,5 +1,19 @@
 import { useState, useMemo } from "react";
 
+// 画像
+import trainOpen from "./assets/images/train-open.png";
+import trainClose from "./assets/images/train-close.png";
+
+import homedoorOpen from "./assets/images/homedoor-open.png";
+import homedoorClose from "./assets/images/homedoor-close.png";
+
+import consoleOpenImg from "./assets/images/console-open.png";
+import consoleCloseImg from "./assets/images/console-close.png";
+
+// 音声
+import openSoundFile from "./assets/sounds/open.wav";
+import closeSoundFile from "./assets/sounds/close.wav";
+
 function App() {
   // ホームドア状態
   const [isOpen, setIsOpen] = useState(false);
@@ -9,12 +23,12 @@ function App() {
 
   // 音声
   const openSound = useMemo(
-    () => new Audio("/sounds/open.wav"),
+    () => new Audio(openSoundFile),
     []
   );
 
   const closeSound = useMemo(
-    () => new Audio("/sounds/close.wav"),
+    () => new Audio(closeSoundFile),
     []
   );
 
@@ -98,8 +112,8 @@ function App() {
           <img
             src={
               isOpen
-                ? "/images/train-open.png"
-                : "/images/train-close.png"
+                ? trainOpen
+                : trainClose
             }
             alt="電車"
             style={{
@@ -115,8 +129,8 @@ function App() {
           <img
             src={
               isOpen
-                ? "/images/homedoor-open.png"
-                : "/images/homedoor-close.png"
+                ? homedoorOpen
+                : homedoorClose
             }
             alt="ホームドア"
             style={{
@@ -151,8 +165,8 @@ function App() {
           <img
             src={
               consoleOpen
-                ? "/images/console-open.png"
-                : "/images/console-close.png"
+                ? consoleOpenImg
+                : consoleCloseImg
             }
             alt="操作盤"
             style={{
